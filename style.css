@@ -1,0 +1,254 @@
+@font-face {
+    font-family: 'genericons';
+    font-display: auto;
+    src: url('./fonts/Genericons/Genericons.eot');
+    src: url('./fonts/Genericons/Genericons.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Genericons/Genericons.woff') format('woff'),
+    url('./fonts/Genericons/Genericons.ttf') format('truetype'),
+    url('./fonts/Genericons/Genericons.svg#entypo') format('svg');
+    font-weight: normal; font-style: normal;
+}
+
+/* Apply these base styles to all icons */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "genericons", "Open Sans", sans-serif;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    text-decoration: none !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Each icon is created by inserting the correct character into the
+content of the :before pseudo element. Like a boss. */
+.icon-github:before {
+    content: "\f200";
+}
+
+.icon-twitter:before {
+    content: "\f202";
+}
+
+.icon-linkedin:before {
+    content: "\f208";
+}
+
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,header,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    font:inherit;
+    vertical-align:baseline
+}
+article,aside,details,figcaption,figure,header,header,hgroup,menu,nav,section{
+    display:block
+}
+ol,ul{
+    list-style:none
+}
+blockquote,q{
+    quotes:none
+}
+blockquote:after,blockquote:before,q:after,q:before{
+    content:'';
+    content:none
+}
+table{
+    border-collapse:collapse;
+    border-spacing:0
+}
+a{
+    color:inherit
+}
+.clear{
+    clear:both
+}
+html{
+    font-size:62.5%
+}
+body{
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:1.8em;
+    line-height:27px;
+    color:#AAA;
+    background: #000;
+    padding:60px;
+    line-height:1;
+}
+section{
+    padding:30px 0;
+}
+header{
+    clear:both;
+    padding:30px 0;
+}
+header a{
+    text-decoration:none
+}
+header .email{
+    float:right;
+    margin-right:15px
+}
+header .email img{
+    width:20px;
+    height:20px;
+    margin-top:5px
+}
+header .twitter, header .linkedin{
+    float:right;
+    font-size: 1.5em;
+    padding: 0 2px 0 2px;
+}
+header hr{
+    margin:30px 0;
+    background:#ddd;
+    min-height:1px;
+    height:1px;
+    border:none
+}
+img{
+    width:32px;
+    height:32px
+}
+
+.icon-twitter, .icon-linkedin{
+    color: #fff;
+}
+
+.container{
+    max-width:800px;
+    margin:0 auto
+}
+h1{
+    margin:0;
+    font-size:2.2em;
+    line-height:32px
+}
+h3{
+    font-size:5em;
+    line-height:100%;
+    height:100px;
+    font-weight:700
+}
+li{
+    float:left;
+    clear:left
+}
+.name:hover {
+    color: #fff;
+}
+li .hidden{
+    display:none
+}
+li .learner:before,li .valuable:before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:-2000px;
+    right:-2000px;
+    bottom:0;
+    z-index:-999;
+    cursor:none!important
+}
+li .developer:before, li .photographer:before{
+    content:'';
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:-999;
+    /* cursor:none!important */
+}
+li .developer:after,li .photographer:after,li .learner:after,li .spec-fic:after{
+    position:absolute;
+    left:0
+}
+li:hover h3{
+    opacity:0
+}
+li:hover .hidden{
+    color:#FFF;
+    opacity:1;
+    display:block;
+    position:absolute
+}
+.developer:before{
+    background:url(./developer.png)
+}
+li .valuable:before{
+    left:-5px;
+    right:-5px;
+    top: -5px;
+    bottom: 10px;
+    background:url(https://thevaluable.dev/images/2018/computer_science_01/03.jpg) no-repeat;
+}
+li .valuable {
+    color: #000;
+}
+.photographer:before{
+    background:url(./photo.jpg)
+}
+.learner{
+    color:#fff
+}
+.learner:before{
+    background:#cb2027
+}
+li .learner:before{
+    top: -5px;
+}
+@media (max-width:1400px){
+    .container{
+        max-width:600px
+    }
+    body{
+        padding:40px
+    }
+    header{
+        padding:20px 0
+    }
+    h1{
+        font-size:2em
+    }
+    h3{
+        font-size:3.5em;
+        height:70px
+    }
+}
+@media (max-width:700px){
+    body{
+        padding:0 30px
+    }
+    section{
+        padding:0
+    }
+    h1{
+        font-size:1.1em
+    }
+    h3{
+        font-size:1.8em;
+        line-height:42px;
+        height:44px
+    }
+    header form,header hr{
+        display:none
+    }
+    li{
+        width:100%
+    }
+    li h3{
+        padding:20px 0;
+        opacity:0
+    }
+    li .hidden{
+        opacity:1;
+        display:block;
+        position:absolute
+    }
+}
