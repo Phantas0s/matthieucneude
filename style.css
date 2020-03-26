@@ -236,9 +236,6 @@ li .learner:before{
         line-height:42px;
         height:44px
     }
-    header form,header hr{
-        display:none
-    }
     li{
         width:100%
     }
@@ -250,5 +247,19 @@ li .learner:before{
         opacity:1;
         display:block;
         position:absolute
+    }
+    h3 span:before {
+        background: none;
+    }
+    .developer:before, li .valuable:before, .photographer:before, .learner:before{
+        background:none;
+    }
+
+    .photographer-container {
+        display:none;
+    }
+
+    .developer, li .valuable, .photographer, .learner{
+        color: #fff;
     }
 }
