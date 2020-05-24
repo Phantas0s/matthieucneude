@@ -167,7 +167,7 @@ li .hidden{
     display:none
 }
 
-li .learner:before,li .valuable:before{
+li .learner:before, li .valuable:before{
     content:'';
     position:absolute;
     top:0;
@@ -220,11 +220,11 @@ li .valuable:before{
     bottom: 10px;
 }
 
-.no-webp li .valuable:before{
+.no-webp .valuable:before{
     background:url(./valuable.jpg) no-repeat;
 }
 
-.webp li .valuable:before{
+.webp .valuable:before{
     background:url(./valuable.webp) no-repeat;
 }
 
@@ -299,7 +299,10 @@ li .learner:before{
     h3 span:before {
         background: none;
     }
-    .developer:before, li .valuable:before, .photographer:before, .learner:before{
+
+    .webp .developer:before, .webp .valuable:before, .webp .photographer:before, .webp .learner:before,
+    .no-webp .developer:before, .no-webp .valuable:before, .no-webp .photographer:before, .no-webp .learner:before
+    {
         background:none;
     }
 
