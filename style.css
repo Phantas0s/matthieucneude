@@ -45,32 +45,37 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     font:inherit;
     vertical-align:baseline
 }
+
 article,aside,details,figcaption,figure,header,header,hgroup,menu,nav,section{
     display:block
 }
+
 ol,ul{
     list-style:none
 }
+
 blockquote,q{
     quotes:none
 }
+
 blockquote:after,blockquote:before,q:after,q:before{
     content:'';
     content:none
 }
+
 table{
     border-collapse:collapse;
     border-spacing:0
 }
+
 a{
     color:inherit
 }
-.clear{
-    clear:both
-}
+
 html{
     font-size:62.5%
 }
+
 body{
     font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size:1.8em;
@@ -80,30 +85,37 @@ body{
     padding:60px;
     line-height:1;
 }
+
 section{
     padding:30px 0;
 }
+
 header{
     clear:both;
     padding:30px 0;
 }
+
 header a{
     text-decoration:none
 }
+
 header .email{
     float:right;
     margin-right:15px
 }
+
 header .email img{
     width:20px;
     height:20px;
     margin-top:5px
 }
+
 header .twitter, header .linkedin{
     float:right;
     font-size: 1.5em;
     padding: 0 2px 0 2px;
 }
+
 header hr{
     margin:30px 0;
     background:#ddd;
@@ -111,6 +123,7 @@ header hr{
     height:1px;
     border:none
 }
+
 img{
     width:32px;
     height:32px
@@ -124,27 +137,36 @@ img{
     max-width:800px;
     margin:0 auto
 }
+
 h1{
     margin:0;
     font-size:2.2em;
     line-height:32px
 }
+
 h3{
     font-size:5em;
     line-height:100%;
     height:100px;
     font-weight:700
 }
+
 li{
     float:left;
     clear:left
 }
+
+.name {
+    transition: all ease 0.2s;
+}
 .name:hover {
     color: #fff;
 }
+
 li .hidden{
     display:none
 }
+
 li .learner:before,li .valuable:before{
     content:'';
     position:absolute;
@@ -155,6 +177,7 @@ li .learner:before,li .valuable:before{
     z-index:-999;
     cursor:none!important
 }
+
 li .developer:before, li .photographer:before{
     content:'';
     position:fixed;
@@ -165,35 +188,58 @@ li .developer:before, li .photographer:before{
     z-index:-999;
     /* cursor:none!important */
 }
+
 li .developer:after,li .photographer:after,li .learner:after,li .spec-fic:after{
     position:absolute;
     left:0
 }
+
 li:hover h3{
     opacity:0
 }
+
 li:hover .hidden{
     color:#FFF;
     opacity:1;
     display:block;
     position:absolute
 }
-.developer:before{
-    background:url(./developer.png)
+
+.no-webp .developer:before{
+    background:url(./developer.jpg)
 }
+
+.webp .developer:before{
+    background:url(./developer.webp)
+}
+
 li .valuable:before{
     left:-5px;
     right:-5px;
     top: -5px;
     bottom: 10px;
-    background:url(https://thevaluable.dev/images/2018/computer_science_01/03.jpg) no-repeat;
 }
+
+.no-webp li .valuable:before{
+    background:url(./valuable.jpg) no-repeat;
+}
+
+.webp li .valuable:before{
+    background:url(./valuable.webp) no-repeat;
+}
+
 li .valuable {
     color: #000;
 }
-.photographer:before{
+
+.no-webp .photographer:before{
     background:url(./photo.jpg)
 }
+
+.webp .photographer:before{
+    background:url(./photo.webp)
+}
+
 .learner{
     color:#fff
 }
@@ -203,6 +249,7 @@ li .valuable {
 li .learner:before{
     top: -5px;
 }
+
 @media (max-width:1400px){
     .container{
         max-width:600px
@@ -221,6 +268,7 @@ li .learner:before{
         height:70px
     }
 }
+
 @media (max-width:700px){
     body{
         padding:0 30px
