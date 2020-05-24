@@ -206,7 +206,7 @@ li:hover .hidden{
 }
 
 .no-webp .developer:before{
-    background:url(./developer.jpg)
+    background:url(./developer.png)
 }
 
 .webp .developer:before{
